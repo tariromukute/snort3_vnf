@@ -1,0 +1,33 @@
+{
+    "lifecycle_event": [
+      {
+        "event": "INSTANTIATE",
+        "lifecycle_events": [
+          "install.sh"
+        ],
+        "inputs": [
+          { "HOME_NET": "172.17.0.0/24" },
+          { "PULLEDPORK_OINKCODE": "xxx"}
+        ],
+        "dsl": "script"
+      },
+      {
+        "event": "CONFIGURE",
+        "lifecycle_events": [
+          "configure_openlan.sh"
+        ]
+      },
+      {
+        "event": "START",
+        "lifecycle_events": [
+          "start.sh"
+        ]
+      },
+      {
+        "event": "STOP",
+        "lifecycle_events": [
+          "stop.sh"
+        ]
+      }
+    ]
+  }
